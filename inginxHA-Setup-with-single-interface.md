@@ -294,11 +294,11 @@ crm(live)configure# commit
  
  ```
  crm(live)configure# primitive fsdrbd_res ocf:heartbeat:Filesystem \
-   > params device="/dev/drbd0" directory="/nginx" fstype="xfs" \
-   > options="noatime" \
-   > op start interval="0" timeout="100s" \
-   > op stop interval="0" timeout="100s" \
-   > op monitor interval="10s" timeout="100s"
+   params device="/dev/drbd0" directory="/nginx" fstype="xfs" \
+   options="noatime" \
+   op start interval="0" timeout="100s" \
+   op stop interval="0" timeout="100s" \
+   op monitor interval="10s" timeout="100s"
 crm(live)configure# commit
 ```
 <b>Step4:</b>
@@ -307,9 +307,9 @@ crm(live)configure# commit
  
 ```
 crm(live)configure# primitive nginx_res systemd:nginx \
-   > op start interval="0" timeout="100s" \
-   > op stop interval="0" timeout="100s" \
-   > op monitor interval="20s" timeout="100s"
+   op start interval="0" timeout="100s" \
+   op stop interval="0" timeout="100s" \
+   op monitor interval="20s" timeout="100s"
 crm(live)configure# commit
 ```
 <b>Step5:</b>

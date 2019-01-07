@@ -2,7 +2,7 @@
 
 
 
-<h3>Resource and tool details:</h3>
+<>We will do this configuration on 2 nodes </b>
 
   - <b>Node1:</b> nginx-node1.example.com - 192.168.1.10
   - <b>Node2:</b> nginx-node2.example.com - 192.168.1.11
@@ -13,7 +13,7 @@
     - <b>DRBD:</b>
     
       DRBD(Distributed Replicated Block Device) using this for shared volume.
-      document link is https://docs.linbit.com/
+      DRBD reference document link is https://docs.linbit.com/
       
     - <b>Corosync & Pacemaker:</b>
     

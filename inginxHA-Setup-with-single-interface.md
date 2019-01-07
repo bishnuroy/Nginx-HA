@@ -2,7 +2,7 @@
 
 
 
-<>We will do this configuration on 2 nodes </b>
+<b>We will do this configuration on 2 nodes with one virtual ip and drbd shared volume where all the nginx configuration will be stored. This configuration is done on vmware environment.</b>
 
   - <b>Node1:</b> nginx-node1.example.com - 192.168.1.10
   - <b>Node2:</b> nginx-node2.example.com - 192.168.1.11
